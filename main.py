@@ -76,7 +76,6 @@ sy2 = 320
 running = True
 
 while running:
-    count += 1
     screen.fill((0, 0, 0))
     screen.blit(bg, (0, 0))
     if sy == 250:
@@ -104,6 +103,7 @@ while running:
                 changeinx = 0
                 changeiny = 0
     if sy == -1000:
+      count += 1
       x += changeinx
       y += changeiny
       y2 += 5
