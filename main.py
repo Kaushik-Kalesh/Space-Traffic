@@ -4,7 +4,6 @@ import random
 
 pg.init()
 
-
 def spaceship_img(img):
     img = pg.image.load(img)
     img2 = pg.transform.rotate(img, 180)
