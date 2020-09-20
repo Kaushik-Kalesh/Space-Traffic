@@ -9,7 +9,6 @@ def spaceship_img(img):
     img2 = pg.transform.rotate(img, 180)
     return img2
 
-
 #Adding images/objects
 screen = pg.display.set_mode((800, 580))
 pg.display.set_caption('Space Invaders')
@@ -62,17 +61,14 @@ distances = []
 cnt = 0
 paused = False
 
-
 #related functions
 def blit(img, position):
     screen.blit(img, position)
-
 
 def distance(x, x2, y, y2):
     distance = sqrt(pow(x - x2, 2) + pow(y - y2, 2))
     if distance < 46:
         return True
-
 
 '''def distance_2(bx, x2, by, y2):
         distance = sqrt(pow(bx - x2, 2) + pow(by - y2, 2))
@@ -123,6 +119,7 @@ while running:
         if event.type == pg.KEYUP:
             if event.key == pg.K_LEFT or event.key == pg.K_RIGHT:
                 changeinx = 0
+
     if paused != True:
         if sy == -1000:
             count += 1
@@ -168,8 +165,10 @@ while running:
 
         position_x = [x, x2, x3, x4, x5, x6, x7, x8]
         position_y = [y, y2, y3, y4, y5, y6, y7, y8]
+
         '''position_bx = [bx, x2, x3, x4, x5, x6, x7, x8]
         position_by = [by, y2, y3, y4, y5, y6, y7, y8]'''
+
         blit(player, (x, y))
         blit(bullet, (bx, by))
         blit(enemy1, (x2, y2))
@@ -195,11 +194,13 @@ while running:
             posy = position_y[i]
             distance2 = distance(x, posx, y, posy)
             distances.append(distance2)
+
         '''for i in range(1, len(position_bx)):
             posx = position_bx[i]
             posy = position_by[i]
             ty = distance_2(bx, posx, by, posy)
             ty = -200'''
+
         cond = any(distances)
         if cond == True:
             y = -100
@@ -211,6 +212,7 @@ while running:
             y7 = -100
             y8 = -100
             screen.blit(gameover, (200, 250))
+
         '''if fired == True:
           for i in distances_2:
               for j in i:
@@ -228,6 +230,8 @@ while running:
                 score_final = font2.render("Score : " + str(round(score)),
                                            True, (255, 255, 255))
                 screen.blit(score_final, (320, 320))
+
     else:
         screen.blit(Paused_Screen, (275, 250))
+        
     pg.display.update()
