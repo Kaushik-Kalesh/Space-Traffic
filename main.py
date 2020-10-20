@@ -235,3 +235,7 @@ while running:
         screen.blit(Paused_Screen, (275, 250))
         
     pg.display.update()
+
+#Just copy and paste this in a Python Interpreter
+#with pygame installed and run it
+#then have fun playing it! 
