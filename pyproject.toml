@@ -2,10 +2,10 @@
 name = "space-invaders"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Kaushik"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 pygame = "^1.9.6"
 
 [tool.poetry.dev-dependencies]
