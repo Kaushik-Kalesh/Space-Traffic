@@ -1,14 +1,14 @@
 [[package]]
 category = "main"
-description = "Python Game Development"
-name = "pygame"
+description = "First Pygame"
+name = "Space Invaders"
 optional = false
 python-versions = "*"
 version = "1.9.6"
 
 [metadata]
 content-hash = "adbabeac9efd54a94caba9e0cb4335f9c24b8523bea393f610951b918723427a"
-python-versions = "^3.8"
+python-versions = "^3.9"
 
 [metadata.files]
 pygame = [

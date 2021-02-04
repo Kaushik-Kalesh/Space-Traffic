@@ -9,7 +9,7 @@ def spaceship_img(img):
     img2 = pg.transform.rotate(img, 180)
     return img2
 
-#Adding images/objects
+#adding images/objects
 screen = pg.display.set_mode((800, 580))
 pg.display.set_caption('Space Invaders')
 player = pg.image.load('spaceship.png')
@@ -235,3 +235,7 @@ while running:
         screen.blit(Paused_Screen, (275, 250))
         
     pg.display.update()
+
+#Just copy and paste this in a Python Interpreter
+#with pygame installed and run it
+#then have fun playing it! 
