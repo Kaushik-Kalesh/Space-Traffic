@@ -12,19 +12,19 @@ def spaceship_img(img):
 #adding images/objects
 screen = pg.display.set_mode((800, 580))
 pg.display.set_caption('Space Invaders')
-player = pg.image.load('/images/spaceship.png')
+player = pg.image.load('./images/spaceship.png')
 pg.display.set_icon(player)
-enemy1 = spaceship_img('/images/enemy1.png')
-enemy2 = spaceship_img('/images/enemy2.png')
-asteroid1 = spaceship_img('/images/asteroid.png')
-asteroid2 = pg.image.load('/images/asteroid2.png')
-enemy3 = spaceship_img('/images/enemy3.png')
-enemy4 = spaceship_img('/images/enemy4.png')
-enemy5 = spaceship_img('/images/enemy5.png')
-bullet = pg.image.load('/images/bullet.png')
+enemy1 = spaceship_img('./images/enemy1.png')
+enemy2 = spaceship_img('./images/enemy2.png')
+asteroid1 = spaceship_img('./images/asteroid.png')
+asteroid2 = pg.image.load('./images/asteroid2.png')
+enemy3 = spaceship_img('./images/enemy3.png')
+enemy4 = spaceship_img('./images/enemy4.png')
+enemy5 = spaceship_img('./images/enemy5.png')
+bullet = pg.image.load('./images/bullet.png')
 
 #adding backgrounds
-bg_1 = pg.image.load('/images/spacebg.png')
+bg_1 = pg.image.load('./images/spacebg.png')
 bg = pg.transform.scale(bg_1, (800, 580))
 font = pg.font.Font("freesansbold.ttf", 64)
 font2 = pg.font.Font("freesansbold.ttf", 32)
@@ -72,12 +72,10 @@ def distance(x, x2, y, y2):
 
 '''def distance_2(bx, x2, by, y2):
         distance = sqrt(pow(bx - x2, 2) + pow(by - y2, 2))
-
         ''' '''if distance < 46:
             return {[x2,y2] : True}
         else:
             return {[x2,y2] : False}''' ''''
-
         if distance < 46:
             return y2'''
 
