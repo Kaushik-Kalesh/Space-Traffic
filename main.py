@@ -16,7 +16,7 @@ enemy2 = spaceship_img('./images/enemy2.png')
 enemy3 = spaceship_img('./images/enemy3.png')
 enemy4 = spaceship_img('./images/enemy4.png')
 enemy5 = spaceship_img('./images/enemy5.png')
-asteroid1 = spaceship_img('./images/asteroid1.png')
+asteroid1 = spaceship_img('./images/asteroid.png')
 asteroid2 = pg.image.load('./images/asteroid2.png')
 bullet = pg.image.load('./images/bullet.png')
 
