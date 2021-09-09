@@ -1,6 +1,6 @@
 # Space-Invaders 🚀
 
-*Fun Space Game 🌌 do try it out!*
+*Fun Space Game 🌌 do clone the repository and try it out!*
 
 ## Objective 🥅
 
