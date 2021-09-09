@@ -28,7 +28,7 @@ paused_screen = font.render("PAUSED", 1, (255, 255, 255))
 start1 = font.render("SPACE INVADERS", 1, (255, 255, 255))
 start2 = font2.render("Press Space to Start", 1, (255, 255, 255))
 
-#allotting coordinates
+#allocating coordinates and related values
 x1 = 350
 y1 = 450
 x2 = random.randint(0, 700)
