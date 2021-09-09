@@ -14,7 +14,7 @@ Avoid the obstacles 🪨, and survive 🔥. Try to beat your high score 💯!
 
 ## Gameplay 🎥
 
-|gif to be added|
+(gif to be added)
 
 ## Info ℹ️
 
