@@ -129,9 +129,9 @@ while running:
             screen.blit(gameover, (200, 250))
 
         if sy1 == -1000:
-            if cond:screen.blit(font2.render("Score : " + str(round(score)), 1, (255, 255, 255)), (320, 320))
+            if cond:screen.blit(font2.render(f'Score : {round(score)}', 1, (255, 255, 255)), (320, 320))
             else:
                 score += 0.1
-                screen.blit(font2.render("Score : " + str(round(score)), 1, (255, 255, 255)), (0, 10))
+                screen.blit(font2.render(f'Score : {round(score)}', 1, (255, 255, 255)), (0, 10))
 
     pg.display.update()
