@@ -25,7 +25,6 @@ y3, y4, y5, y6, y7, y8 = [0] * 6
 count = 0
 score = 0
 change_in_x = 0
-
 distances = []
 cnt = 0
 paused = 0
@@ -86,12 +85,9 @@ while running:
         position_y = [y1, y2, y3, y4, y5, y6, y7, y8]
 
         blit(player, (x1, y1))
-
         blit(rotate_img('./images/enemy1.png'), (x2, y2))
-        if count > 100:
-            blit(rotate_img('./images/enemy2.png'), (x3, y3))
-        if count > 200:
-            blit(rotate_img('./images/asteroid.png'), (x4, y4))
+        if count > 100:blit(rotate_img('./images/enemy2.png'), (x3, y3))
+        if count > 200:blit(rotate_img('./images/asteroid.png'), (x4, y4))
         if count > 1000:
             y5 += 2
             blit(pg.image.load('./images/asteroid2.png'), (x5, y5))
