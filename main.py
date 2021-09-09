@@ -52,7 +52,7 @@ sy1 = 250
 sx2 = 345
 sy2 = 320
 
-#game area(main code)
+#game logic
 running = 1
 
 while running:
