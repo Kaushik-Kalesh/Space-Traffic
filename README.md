@@ -1,19 +1,19 @@
-# Space-Invaders
+# Space-Invaders 🚀
 
-## Objective
+## Objective 🥅
 
-Avoid the obstacles, and survive. Try to beat your high score!
+Avoid the obstacles 🪨, and survive 🔥. Try to beat your high score 💯!
 
-## How to Play
+## How to Play 🤔
 
-- Press Space Bar to start
-- Use Left and Right arrow keys to move left and right
-- Avoid the obstacles
+- Press Space Bar to start 🔘
+- Use Left and Right arrow keys to move left and right ↔️
+- Avoid the obstacles 🪨
 
-## Gameplay
+## Gameplay 🎥
 
-<gif to be added>
+|gif to be added|
 
-## Info
+## Info ℹ️
 
-This was my first game! Feel Free to star/fork the repo, and follow me! 
+This was my first game 🎮! Feel Free to star/fork the repo 🌟, and follow me 😄! 
