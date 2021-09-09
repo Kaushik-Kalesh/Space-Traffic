@@ -22,9 +22,7 @@ asteroid2 = pg.image.load('./images/asteroid2.png')
 #adding background, fonts, text
 bg = pg.transform.scale(pg.image.load('./images/spacebg.png'), (800, 580))
 font = pg.font.Font("freesansbold.ttf", 64)
-font2 = pg.font.Font("freesansbold.ttf", 32)
-gameover = font.render("GAME OVER", 1, (255, 255, 255))
-paused_screen = font.render("PAUSED", 1, (255, 255, 255))
+font2 = pg.font.Font("freesansbold.ttf", 32) 
 start1 = font.render("SPACE INVADERS", 1, (255, 255, 255))
 start2 = font2.render("Press Space to Start", 1, (255, 255, 255))
 
@@ -76,7 +74,7 @@ while running:
         if event.type == pg.KEYUP:
             if event.key in (pg.K_LEFT, pg.K_RIGHT):change_in_x = 0
 
-    if paused:screen.blit(paused_screen, (275, 250))
+    if paused:screen.blit(font.render("PAUSED", 1, (255, 255, 255)), (275, 250))
     else:
         if sy1 == -1000:
             count += 1
@@ -122,7 +120,7 @@ while running:
         cond = any(distances)
         if cond:
             y1, y2, y3, y4, y5, y6, y7, y8 = [-100] * 8
-            screen.blit(gameover, (200, 250))
+            screen.blit(font.render("GAME OVER", 1, (255, 255, 255)), (200, 250))
 
         if sy1 == -1000:
             if cond:screen.blit(font2.render(f'Score : {round(score)}', 1, (255, 255, 255)), (320, 320))
