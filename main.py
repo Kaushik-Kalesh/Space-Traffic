@@ -11,20 +11,10 @@ screen = pg.display.set_mode((800, 580))
 pg.display.set_caption('Space Invaders')
 player = pg.image.load('./images/spaceship.png')
 pg.display.set_icon(player)
-enemy1 = rotate_img('./images/enemy1.png')
-enemy2 = rotate_img('./images/enemy2.png')
-enemy3 = rotate_img('./images/enemy3.png')
-enemy4 = rotate_img('./images/enemy4.png')
-enemy5 = rotate_img('./images/enemy5.png')
-asteroid1 = rotate_img('./images/asteroid.png')
-asteroid2 = pg.image.load('./images/asteroid2.png')
 
-#adding background, fonts, text
-bg = pg.transform.scale(pg.image.load('./images/spacebg.png'), (800, 580))
+#adding fonts
 font = pg.font.Font("freesansbold.ttf", 64)
 font2 = pg.font.Font("freesansbold.ttf", 32) 
-start1 = font.render("SPACE INVADERS", 1, (255, 255, 255))
-start2 = font2.render("Press Space to Start", 1, (255, 255, 255))
 
 #allocating coordinates and related values
 x1 = 350
@@ -55,10 +45,10 @@ running = 1
 
 while running:
     screen.fill((0, 0, 0))
-    screen.blit(bg, (0, 0))
+    screen.blit(pg.transform.scale(pg.image.load('./images/spacebg.png'), (800, 580)), (0, 0))
     if sy1 == 250:
-        screen.blit(start1, (sx1, sy1))
-        screen.blit(start2, (sx2, sy2))
+        screen.blit(font.render("SPACE INVADERS", 1, (255, 255, 255)), (sx1, sy1))
+        screen.blit(font2.render("Press Space to Start", 1, (255, 255, 255)), (sx2, sy2))
     for event in pg.event.get():
         if event == pg.QUIT:
             running = 0
@@ -97,23 +87,23 @@ while running:
 
         blit(player, (x1, y1))
 
-        blit(enemy1, (x2, y2))
+        blit(rotate_img('./images/enemy1.png'), (x2, y2))
         if count > 100:
-            blit(enemy2, (x3, y3))
+            blit(rotate_img('./images/enemy2.png'), (x3, y3))
         if count > 200:
-            blit(asteroid1, (x4, y4))
+            blit(rotate_img('./images/asteroid.png'), (x4, y4))
         if count > 1000:
             y5 += 2
-            blit(asteroid2, (x5, y5))
+            blit(pg.image.load('./images/asteroid2.png'), (x5, y5))
         if count > 1200:
             y6 += 5
-            blit(enemy3, (x6, y6))
+            blit(rotate_img('./images/enemy3.png'), (x6, y6))
         if count > 2000:
             y7 += 7
-            blit(enemy4, (x7, y7))
+            blit(rotate_img('./images/enemy4.png'), (x7, y7))
         if count > 2500:
             y8 += 9
-            blit(enemy5, (x8, y8))
+            blit(rotate_img('./images/enemy5.png'), (x8, y8))
 
         for i in range(1, len(position_x)):distances.append(distance(x1, position_x[i], y1, position_y[i]))
 
