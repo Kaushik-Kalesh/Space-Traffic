@@ -1,5 +1,7 @@
 # Space-Invaders 🚀
 
+*Fun Space Game 🌌 do try it out!*
+
 ## Objective 🥅
 
 Avoid the obstacles 🪨, and survive 🔥. Try to beat your high score 💯!
