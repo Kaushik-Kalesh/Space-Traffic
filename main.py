@@ -4,19 +4,19 @@ import random
 
 pg.init()
 
-spaceship_img = lambda img:pg.transform.rotate(pg.image.load(img), 180)
+rotate_img = lambda img:pg.transform.rotate(pg.image.load(img), 180)
 
 #adding images/objects
 screen = pg.display.set_mode((800, 580))
 pg.display.set_caption('Space Invaders')
 player = pg.image.load('./images/spaceship.png')
 pg.display.set_icon(player)
-enemy1 = spaceship_img('./images/enemy1.png')
-enemy2 = spaceship_img('./images/enemy2.png')
-enemy3 = spaceship_img('./images/enemy3.png')
-enemy4 = spaceship_img('./images/enemy4.png')
-enemy5 = spaceship_img('./images/enemy5.png')
-asteroid1 = spaceship_img('./images/asteroid.png')
+enemy1 = rotate_img('./images/enemy1.png')
+enemy2 = rotate_img('./images/enemy2.png')
+enemy3 = rotate_img('./images/enemy3.png')
+enemy4 = rotate_img('./images/enemy4.png')
+enemy5 = rotate_img('./images/enemy5.png')
+asteroid1 = rotate_img('./images/asteroid.png')
 asteroid2 = pg.image.load('./images/asteroid2.png')
 
 #adding background, fonts, text
