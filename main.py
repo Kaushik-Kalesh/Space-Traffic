@@ -18,7 +18,6 @@ enemy4 = spaceship_img('./images/enemy4.png')
 enemy5 = spaceship_img('./images/enemy5.png')
 asteroid1 = spaceship_img('./images/asteroid.png')
 asteroid2 = pg.image.load('./images/asteroid2.png')
-bullet = pg.image.load('./images/bullet.png')
 
 #adding background, fonts, text
 bg = pg.transform.scale(pg.image.load('./images/spacebg.png'), (800, 580))
@@ -38,9 +37,7 @@ y3, y4, y5, y6, y7, y8 = [0] * 6
 count = 0
 score = 0
 change_in_x = 0
-bx = -100
-by = 450
-change_in_by = 0
+
 distances = []
 cnt = 0
 paused = 0
@@ -84,7 +81,6 @@ while running:
         if sy1 == -1000:
             count += 1
             x1 += change_in_x
-            by += change_in_by
             y2 += 5
             y3 += 5.5
             y4 += 2
@@ -102,7 +98,7 @@ while running:
         position_y = [y1, y2, y3, y4, y5, y6, y7, y8]
 
         blit(player, (x1, y1))
-        blit(bullet, (bx, by))
+
         blit(enemy1, (x2, y2))
         if count > 100:
             blit(enemy2, (x3, y3))
