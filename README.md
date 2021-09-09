@@ -1,6 +1,6 @@
 # Space-Invaders 🚀
 
-*Fun Space Game 🌌 do clone the repository and try it out!*
+*Fun Space Game 🌌 do [clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) and try it out!*
 
 ## Objective 🥅
 
