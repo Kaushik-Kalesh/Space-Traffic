@@ -15,7 +15,7 @@ Avoid the obstacles 🪨, and survive 🔥. Try to beat your high score 💯!
 ## Gameplay 🎥
 
 <a href="https://gyazo.com/5a14ab66e5cc1e7effe8b9b2cbeb19b2"><img src="https://i.gyazo.com/5a14ab66e5cc1e7effe8b9b2cbeb19b2.png" alt="Image from Gyazo" width="804"/></a>
-<a href="https://gyazo.com/438bc2a73a1de16634174720b31b9055"><img src="https://i.gyazo.com/438bc2a73a1de16634174720b31b9055.png" alt="Image from Gyazo" width="801"/></a>
+<a href="https://gyazo.com/cebe06761f4449b4047dcafa99af9adb"><img src="https://i.gyazo.com/cebe06761f4449b4047dcafa99af9adb.png" alt="Image from Gyazo" width="803"/></a>
 
 ## Info ℹ️
 
