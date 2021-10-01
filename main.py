@@ -8,7 +8,7 @@ rotate_img = lambda img:pg.transform.rotate(pg.image.load(img), 180)
 
 #adding images/objects
 screen = pg.display.set_mode((800, 580))
-pg.display.set_caption('Space Invaders')
+pg.display.set_caption('Space Traffic')
 player = pg.image.load('./images/spaceship.png')
 pg.display.set_icon(player)
 
@@ -46,7 +46,7 @@ while running:
     screen.fill((0, 0, 0))
     screen.blit(pg.transform.scale(pg.image.load('./images/spacebg.png'), (800, 580)), (0, 0))
     if sy1 == 250:
-        screen.blit(font.render("SPACE INVADERS", 1, (255, 255, 255)), (sx1, sy1))
+        screen.blit(font.render("SPACE TRAFFIC", 1, (255, 255, 255)), (sx1, sy1))
         screen.blit(font2.render("Press Space to Start", 1, (255, 255, 255)), (sx2, sy2))
     for event in pg.event.get():
         if event == pg.QUIT:
@@ -74,10 +74,10 @@ while running:
             if x1 <= 0:x1 = 0
             elif x1 >= 736:x1 = 736
             if y2 >= 580:x2, y2 = random.randint(0, 200), 0
-            if y3 >= 580:x3, y3 = random.randint(0, 700), 0
+            if y3 >= 580:x3, y3 = x1, 0
             if y4 >= 580:x4, y4 = random.randint(200, 500), 0
             if y5 >= 580:x5, y5 = random.randint(500, 700), 0
-            if y6 >= 580:x6, y6 = random.randint(100, 600), 0
+            if y6 >= 580:x6, y6 = x1, 0
             if y7 >= 580:x7, y7 = random.randint(0, 750), 0
             if y8 >= 580:x8, y8 = random.randint(0, 800), 0
 
