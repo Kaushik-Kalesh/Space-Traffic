@@ -83,7 +83,7 @@ while True:
         blit(player, (x, y))
         blit(rotate_img('./images/enemy1.png'), (x1, y1))
         if count > 100:blit(rotate_img('./images/enemy2.png'), (x2, y2))
-        if count > 200:blit(rotate_img('./images/asteroid1.png'), (x3, y3))
+        if count > 200:blit(rotate_img('./images/asteroid.png'), (x3, y3))
         if count > 1000:
             y4 += 2
             blit(pg.image.load('./images/asteroid2.png'), (x4, y4))
