@@ -47,7 +47,7 @@ while True:
         screen.blit(font.render("SPACE TRAFFIC", True, (255, 255, 255)), (sx, sy))
         screen.blit(font2.render("Press Space to Start", True, (255, 255, 255)), (sx1, sy1))
     for event in pg.event.get():
-        if event == pg.QUIT:break
+        if event.type == pg.QUIT: exit()
         if event.type == pg.KEYDOWN:
             sy = -1000
             sy1 = -1000
